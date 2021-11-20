@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    srand(time(NULL));
+    vector<int> dane;
+    dane.push_back(10);
+    dane.push_back(5);
+    dane.push_back(77);
+    dane.push_back(42);
+
+
+    for(int i=0;i<dane.size();++i){
+        cout << dane[i] << endl;
+    }
+}
