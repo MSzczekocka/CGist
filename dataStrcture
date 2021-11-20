@@ -1,0 +1,17 @@
+struct Dane{
+    int id;
+    int age;
+};
+
+int main() {
+    srand(time(NULL));
+    Dane dane[10];
+    for(int i=0;i<10;++i){
+        dane[i].id = i;
+        dane[i].age = rand() % 50;
+    }
+
+    for(int i=0;i<10;++i){
+        cout << "id: " << dane[i].id;
+        cout << " age: " << dane[i].age << endl;
+    }
