@@ -1,0 +1,5 @@
+while (!(cin >> n)) {
+		cout << "Zly typ zmiennej. Podaj liczbe: ";
+		cin.clear();
+		cin.ignore(123, '\n');
+	}
