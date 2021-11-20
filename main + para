@@ -1,0 +1,14 @@
+int main(int argc, char** argv) {
+	cout << "Liczba argumentow: " << argc << endl;
+	cout << "Pierwszy argument: " << argv[0] << endl;
+	cout << "Drugi argument: " << argv[1] << endl;
+	cout << "Trzeci argument: " << argv[2] << endl;
+
+	int a = atoi(argv[1]);
+	int b = atoi(argv[2]);
+
+	int c = a + b;
+	cout << a+b << endl;
+	cout << c << endl;
+
+}
