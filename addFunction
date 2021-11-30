@@ -1,0 +1,10 @@
+h.file
+#ifndef PROJECT_CLASSNAME_H
+#define PROJECT_CLASSNAME_H
+#endif
+
+cpp.file
+#include "file.h"
+
+main.cpp
+#include "file.h"
