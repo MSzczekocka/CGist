@@ -1,0 +1,9 @@
+// stworz tablice
+int *tab;
+tab = create(100);
+
+//kopiowanie pamięci 
+memcpy(nowy wskaźnik, stary wskaźnik, ile elementów);
+
+// unuń tablice
+delete [] tab;
