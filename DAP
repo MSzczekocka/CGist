@@ -7,3 +7,33 @@ memcpy(nowy wskaźnik, stary wskaźnik, ile elementów);
 
 // unuń tablice
 delete [] tab;
+
+#include <iostream>
+using namespace std;
+
+int* create(int size){
+    return new int[size];
+}
+
+int* resize(int* arr, int size1, int size2){
+    int* result = new int[size2];
+    memcpy(result,arr,size1);
+    return  result;
+}
+
+int main() {
+    int *tab;
+    tab = create(100);
+    tab[0] = 123;
+    tab[9] = 9;
+
+    cout << tab[0] << " "<<tab[9] << endl;
+
+    resize(tab,100,200);
+    tab[199] = 222;
+
+    cout << tab[9] << " "<<tab[199] << endl;
+    delete [] tab;
+
+    return 0;
+}
