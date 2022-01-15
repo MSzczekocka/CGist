@@ -1,0 +1,9 @@
+while (pom!=nullptr){
+        temp2 = pom-> nst;
+        delete pom;
+        pom = NULL;
+        pom= temp2;
+    }
+    
+    
+    
